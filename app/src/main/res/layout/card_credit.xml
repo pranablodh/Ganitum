@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:gravity="center"
+    android:layout_marginBottom="10dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+
+        <TextView
+            android:id="@+id/creditCustomerName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/sale_view_item_border"
+            android:textSize="15sp"
+            android:hint="29-07-2019"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_weight=".33"
+            android:scrollHorizontally="false"/>
+
+        <TextView
+            android:id="@+id/creditCustomerAmount"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/sale_view_item_border"
+            android:textSize="15sp"
+            android:hint="150000"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_weight=".33"
+            android:scrollHorizontally="false"/>
+
+    </TableRow>
+</TableLayout>

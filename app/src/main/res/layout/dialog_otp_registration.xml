@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_otp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:textColor="#ff0000"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_otp_received_on_your_registered_phone"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="#ff0000"/>
+
+            <TextView
+                android:id="@+id/changePhoneNumber"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/to_change_phone_number_click_here"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="#ff0000"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <com.goodiebag.pinview.Pinview
+                android:id="@+id/otpEnter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:pinWidth="40dp"
+                app:pinHeight="40dp"
+                app:pinLength="4"
+                app:cursorVisible="true"
+                app:forceKeyboard="true"
+                app:hint="0"
+                app:inputType="text"
+                app:password="false"/>
+
+            <TextView
+                android:id="@+id/resend_otp"
+                android:layout_marginTop="10dp"
+                android:text="@string/resend_otp"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:textColor="#ff0000"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <Button
+                android:id="@+id/otpSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_login"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
